@@ -4,13 +4,19 @@
  * for Adventures in Algorithms
  * At Menlo School in Atherton, CA
  *
- * Completed by: YOUR NAME HERE
+ * Completed by: Oliver Faris
  */
 public class Riddler {
 
     public String decryptOne(String encrypted) {
         String decrypted = "";
+        int ascii = 0;
 
+        for (int i=0; i< encrypted.length(); i++) {
+            // I need to check if a certain char is a letter or not
+            ascii = (int) (encrypted.charAt(i));
+            decrypted += (char) (ascii+9);
+        }
         // TODO: Complete the decryptOne() function.
 
         return decrypted;

@@ -9,7 +9,7 @@ public class RiddlerTester {
     @Test
     public void testOne() {
         setTestData("1");
-        solver.decryptOne(encrypted);
+        System.out.println(solver.decryptOne(encrypted));
     }
 
     @Test
